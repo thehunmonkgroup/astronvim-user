@@ -47,6 +47,10 @@ return {
       "mfussenegger/nvim-dap",
       "nvim-treesitter/nvim-treesitter",
     },
+    event = "User AstroFile",
+    config = function(opts)
+      require('nvim-dap-virtual-text').setup(opts)
+    end,
   },
   {
     "nvim-telescope/telescope-dap.nvim",
@@ -56,6 +60,7 @@ return {
       -- Optional.
       "nvim-treesitter/nvim-treesitter",
     },
+    event = "User AstroFile",
     config = function()
       require('telescope').load_extension('dap')
     end,
