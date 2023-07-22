@@ -7,6 +7,7 @@ return {
     spell = false, -- sets vim.opt.spell
     signcolumn = "auto", -- sets vim.opt.signcolumn to auto
     wrap = true, -- sets vim.opt.wrap
+    scrolloff = 8,
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
@@ -18,7 +19,15 @@ return {
     ui_notifications_enabled = true, -- disable notifications when toggling UI elements
     resession_enabled = false, -- enable experimental resession.nvim session management (will be default in AstroNvim v4)
   },
+  o = {
+    autoindent = true,
+    smartindent = true,
+  },
+  wo = {
+    wrap = true
+  }
 }
+
 -- If you need more control, you can use the function()...end notation
 -- return function(local_vim)
 --   local_vim.opt.relativenumber = true

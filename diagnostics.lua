@@ -1,5 +1,6 @@
 -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
 return {
-  virtual_text = true,
-  underline = true,
+  float = { source = "always", border = "rounded" },
+  virtual_text = false,
+  signs = true,
 }
