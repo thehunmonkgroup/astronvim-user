@@ -11,7 +11,7 @@ return {
   -- },
   {
     "saltstack/salt-vim",
-    event = "User AstroFile",
+    ft = "sls",
   },
   {
     "Glench/Vim-Jinja2-Syntax",
