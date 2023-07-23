@@ -3,13 +3,14 @@ if os.getenv("OPENAI_API_KEY") then
     {
       "thehunmonkgroup/ChatGPT.nvim",
       lazy = false,
+      dev = true,
       opts = {
         openai_params = {
           model = "gpt-4",
           max_tokens = 600,
         },
         openai_edit_params = {
-          model = "code-davinci-edit-001",
+          model = "gpt-4",
         },
       },
       dependencies = {
