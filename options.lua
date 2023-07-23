@@ -22,6 +22,7 @@ return {
   o = {
     autoindent = true,
     smartindent = true,
+    background = "dark",
   },
   wo = {
     wrap = true
