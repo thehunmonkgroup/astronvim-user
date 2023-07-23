@@ -84,5 +84,6 @@ return {
         operations = false,
       }
     }
-  }
+  },
+  { import = "astrocommunity.motion.vim-matchup" },
 }
