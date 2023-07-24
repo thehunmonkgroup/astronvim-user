@@ -69,7 +69,7 @@ return {
         php = function(config)
           config.adapters = {
             type = 'executable',
-            command = 'nodejs',
+            command = 'node',
             args = { util.get_mason_package_install_path("php-debug-adapter") .. "/extension/out/phpDebug.js" },
           }
           config.configurations = {
