@@ -85,6 +85,13 @@ return {
           }
           require('mason-nvim-dap').default_setup(config) -- don't forget this!
         end,
+        python = function(config)
+          -- Set justMyCode = false on all configurations, default is true.
+          for _, c in ipairs(config.configurations) do
+            c.justMyCode = false
+          end
+          require('mason-nvim-dap').default_setup(config) -- don't forget this!
+        end,
       }
     end,
   },

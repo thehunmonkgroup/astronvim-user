@@ -65,4 +65,11 @@ return {
       require('telescope').load_extension('dap')
     end,
   },
+  {
+    "mfussenegger/nvim-dap-python",
+    event = "User AstroFile",
+    config = function(opts)
+      require('dap-python').setup('~/.pyenv/shims/python')
+    end,
+  },
 }
