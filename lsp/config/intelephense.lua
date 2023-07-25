@@ -1,10 +1,12 @@
 return {
   settings = {
     intelephense = {
-      environment = {
-        includePaths = {
-          "./",
-          -- "/home/hunmonk/git/apartmentlines/apartmentlines.com",
+      files = {
+        associations = {
+          "*.php",
+          "*.module",
+          "*.inc",
+          "*.install",
         },
       },
     },
