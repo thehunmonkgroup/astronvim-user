@@ -33,6 +33,16 @@ return function()
     end,
   })
 
+  -------------------------------------------------
+  -- Set votl filetype for .otl files.
+  -------------------------------------------------
+  vim.api.nvim_create_autocmd({"BufEnter", "BufReadPost"}, {
+    pattern = "*.otl",
+    callback = function()
+      vim.bo.filetype = "votl"
+    end,
+  })
+
   ----------------------------------------------------
   -- Close all buffers except the currently open one.
   ----------------------------------------------------
