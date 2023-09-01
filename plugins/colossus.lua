@@ -12,6 +12,7 @@ if os.getenv("OPENAI_API_KEY") then
         openai_edit_params = {
           model = "gpt-4",
         },
+        use_openai_functions_for_edits = false,
       },
       dependencies = {
         "MunifTanjim/nui.nvim",
