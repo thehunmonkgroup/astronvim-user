@@ -31,6 +31,7 @@ return {
       "phpdoc",
       "python",
       "query",
+      "rst",
       "ruby",
       "rust",
       "scss",
