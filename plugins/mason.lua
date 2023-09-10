@@ -53,6 +53,18 @@ return {
         -- "stylua",
         "flake8",
       })
+      opts.handlers["flake8"] = function(source_name, methods)
+        local null_ls = require("null-ls")
+        if not null_ls.is_registered(source_name) then
+          null_ls.register(null_ls.builtins.diagnostics.flake8)
+          null_ls.builtins.diagnostics.flake8.with({
+            extra_args = {
+              "--max-line-length", "100",
+              "--append-config", vim.fn.expand("~/.flake8"),
+            },
+          })
+        end
+      end
     end,
   },
   {
