@@ -10,6 +10,16 @@ function _M.inspect(...)
   end
 end
 
+function _M.write_to_file(filename, content)
+  local file = io.open(filename, "w")
+  if file then
+    file:write(content)
+    file:close()
+  else
+    error("Could not open file: " .. filename)
+  end
+end
+
 function _M.map(mode, lhs, rhs, opts)
   local options = { noremap = true }
   if opts then
