@@ -6,7 +6,7 @@ return {
     number = true, -- sets vim.opt.number
     spell = false, -- sets vim.opt.spell
     signcolumn = "auto", -- sets vim.opt.signcolumn to auto
-    wrap = true, -- sets vim.opt.wrap
+    -- wrap = true, -- sets vim.opt.wrap
     scrolloff = 8,
     undofile = false,
   },
@@ -25,9 +25,9 @@ return {
     smartindent = true,
     background = "dark",
   },
-  wo = {
-    wrap = true
-  }
+  -- wo = {
+  --   wrap = true
+  -- }
 }
 
 -- If you need more control, you can use the function()...end notation
