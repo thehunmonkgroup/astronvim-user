@@ -59,6 +59,15 @@ return function()
     end
   end
 
+  vim.api.nvim_create_autocmd("FileType", {
+    pattern = "php",
+    callback = function()
+      vim.bo.autoindent = true
+      vim.bo.smartindent = true
+      vim.bo.expandtab = true
+    end,
+  })
+
   -- Set up custom filetypes
   -- vim.filetype.add {
   --   extension = {
