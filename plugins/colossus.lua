@@ -6,13 +6,13 @@ if os.getenv("OPENAI_API_KEY") then
       dev = true,
       opts = {
         openai_params = {
-          model = "gpt-4",
-          max_tokens = 600,
+          model = "gpt-4-1106-preview",
+          max_tokens = 1500,
         },
         openai_edit_params = {
-          model = "gpt-4",
+          model = "gpt-4-1106-preview",
         },
-        use_openai_functions_for_edits = false,
+        use_openai_functions_for_edits = true,
       },
       dependencies = {
         "MunifTanjim/nui.nvim",
