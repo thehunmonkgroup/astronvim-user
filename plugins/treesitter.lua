@@ -17,6 +17,7 @@ return {
       "gitattributes",
       "gitcommit",
       "go",
+      "hcl",
       "html",
       "http",
       "javascript",
