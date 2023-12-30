@@ -20,6 +20,7 @@ return {
       "hcl",
       "html",
       "http",
+      "ini",
       "javascript",
       "jq",
       "json",
@@ -40,6 +41,7 @@ return {
       "toml",
       "vim",
       "vimdoc",
+      "xml",
       "yaml",
     })
   end,
