@@ -4,13 +4,13 @@ local LSP_PACKAGES = {
   "bashls",
   "jsonls",
   "lua_ls",
+  'pylsp',
 }
 local LSP_COLOSSUS_PACKAGES = {
   'cssls',
   'elixirls',
   'html',
   'intelephense',
-  'pylsp',
   'solargraph',
   'tsserver',
   'yamlls',
