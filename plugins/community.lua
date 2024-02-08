@@ -86,5 +86,4 @@ return {
     }
   },
   { import = "astrocommunity.motion.vim-matchup" },
-  { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
 }
