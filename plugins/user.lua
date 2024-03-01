@@ -30,6 +30,10 @@ return {
     event = "User AstroFile",
   },
   {
+    "markuskimius/applescript-vim",
+    event = "User AstroFile",
+  },
+  {
     "vimoutliner/vimoutliner",
     event = "User AstroFile",
   },
