@@ -23,6 +23,7 @@ if os.getenv("OPENAI_API_KEY") then
       dependencies = {
         "MunifTanjim/nui.nvim",
         "nvim-lua/plenary.nvim",
+        "folke/trouble.nvim",
         "nvim-telescope/telescope.nvim"
       },
     },
