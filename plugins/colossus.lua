@@ -12,7 +12,7 @@ if os.getenv("OPENAI_API_KEY") then
           },
         },
         openai_params = {
-          model = "gpt-4-1106-preview",
+          model = "gpt-4-turbo",
           max_tokens = 1500,
         },
         openai_edit_params = {
