@@ -4,7 +4,7 @@ local LSP_PACKAGES = {
   "bashls",
   "jsonls",
   "lua_ls",
-  'pylsp',
+  'pyright',
 }
 local LSP_COLOSSUS_PACKAGES = {
   'cssls',

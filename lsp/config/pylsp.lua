@@ -1,11 +1,11 @@
-return {
-  settings = {
-    pylsp ={
-      plugins = {
-        pyflakes = {
-          enabled = false,
-        },
-      },
-    },
-  },
-}
+-- return {
+--   settings = {
+--     pylsp ={
+--       plugins = {
+--         pyflakes = {
+--           enabled = false,
+--         },
+--       },
+--     },
+--   },
+-- }
