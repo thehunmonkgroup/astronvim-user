@@ -40,6 +40,15 @@ return {
     opts = function(_, opts)
       -- add more things to the ensure_installed table protecting against community packs modifying it
       opts.ensure_installed = require("astronvim.utils").list_insert_unique(opts.ensure_installed, LSP_PACKAGES)
+      -- NOTE: Hack to get around
+      -- https://github.com/williamboman/mason-lspconfig.nvim/issues/458
+      opts.handlers = {
+        function(server_name)
+          if server_name == 'tsserver' then
+            server_name = 'ts_ls'
+          end
+        end
+      }
     end,
   },
   -- use mason-null-ls to configure Formatters/Linter installation for null-ls sources
