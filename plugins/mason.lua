@@ -12,7 +12,7 @@ local LSP_COLOSSUS_PACKAGES = {
   'html',
   'intelephense',
   'solargraph',
-  'tsserver',
+  'ts_ls',
   'yamlls',
 }
 local DAP_PACKAGES = {
